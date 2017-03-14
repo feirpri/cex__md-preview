@@ -5,21 +5,28 @@
 
 .fp-md--root{
   font-size: 0;
-  padding: 20px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fbfbef;
 }
 .fp-md--menu{
   display: inline-block;
-  width: 20%;
-  padding: 0 20px;
+  width: 20vw;
+  height: 100vh;
+  padding: 20px 20px 0;
   border-left: 1px solid rgba(0,0,0,0.15);
   vertical-align: top;
+  background-color: rgb(247, 246, 244);
+  overflow: auto;
 
   font-size: 14px;
 }
 .fp-md--main{
   display: inline-block;
-  width: 80%;
-  padding: 0 20px;
+  width: 80vw;
+  height: 100vh;
+  padding: 0 20px 40px;
+  overflow: auto;
 
   font-size: 14px;
 }
@@ -27,21 +34,28 @@
   margin-top: 20px;
   padding: 0;
   list-style: none;
-  position: fixed;
-  width: 20vw;
-  line-height: 1.8;
+  line-height: 2.4;
+  font-size: 16px;
+}
+.fp-md--menu ul li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .fp-md--menu--level2{
-  padding-left: 15px;
+  padding-left: 25px;
 }
 .fp-md--menu--level3{
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .fp-md--menu--level4{
-  padding-left: 45px;
+  padding-left: 75px;
 }
-.fp-md--menu--level4{
-  padding-left: 60px;
+.fp-md--menu--level5{
+  padding-left: 100px;
+}
+.fp-md--menu--level6{
+  padding-left: 125px;
 }
 .fp-md--anchor{
   color: #000;
@@ -51,6 +65,7 @@
   color: #000;
   text-decoration: none; 
 }
+
 code.block{
   line-height: 2;
   font-size: 13px;
@@ -59,7 +74,7 @@ code.block{
 pre code{
   font: normal 10pt Consolas, Monaco, monospace;
 }
-li {
+.fp-md--main li {
   font-size: 16px;
   line-height: 1.6;
 }
