@@ -1,6 +1,6 @@
 {
-	"name": "Markdown Viewer",
-	"version": "0.0.1",
+	"name": "Markdown 查看器",
+	"version": "0.0.2",
 	"manifest_version": 2,
 	"description": "Markdown文件预览工具",
 	"browser_action": {
@@ -20,7 +20,7 @@
 	"content_scripts": [{
 		"matches": ["file://*/*.md"],
 		"js": [
-			"index.js",
+			"utils.js",
 			"content-script.js"
 		],
 		"css": [
@@ -29,7 +29,12 @@
 			"css/markdown.css"
 		]
 	}],
+    "background": {
+        "persistent" : true,
+        "scripts": ["vender.js", "utils.js", "bg.js", "md.js"]
+    },
 	"permissions": [
-		"activeTab"
+		"tabs",
+        "file:///*"
 	]
 }

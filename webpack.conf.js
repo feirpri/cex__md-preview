@@ -5,7 +5,7 @@ var fs = require('fs')
 
 module.exports = {
   entry: {
-    index: './content.pack.js'
+    vender: './content.pack.js'
   },
   output: {
     path: path.join(__dirname, '/dist'),
