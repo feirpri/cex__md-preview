@@ -3,6 +3,5 @@
 
 Object.assign(window, {
 	marked: require('marked'),
-	hljs: require('highlight.js'),
-    m: require('mithril')
+	hljs: require('highlight.js')
 });
